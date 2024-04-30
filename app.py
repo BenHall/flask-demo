@@ -8,6 +8,9 @@ app.register_blueprint(data)
 
 @app.route('/')
 def index():
+    """
+    This function returns a welcome message for the Flask demo with Blueprints.
+    """
     return 'Welcome to the Flask demo with Blueprints!'
 
 if __name__ == '__main__':
