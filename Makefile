@@ -12,7 +12,14 @@ coverage:
 	@coverage run -m unittest discover
 	@coverage report
 	@coverage html
+	open htmlcov/index.html
 
+
+coverage-single:
+	@coverage run -m unittest tests/test_app_single.py
+	@coverage report
+	@coverage html
+	open htmlcov/index.html
 
 
 install:
