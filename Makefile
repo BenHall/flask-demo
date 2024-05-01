@@ -16,6 +16,8 @@ coverage:
 
 
 coverage-single:
+# coverage run -m unittest tests.test_app_single.FlaskTestCase.test_index
+# coverage run -m unittest tests.test_app.FlaskTestCase.test_index
 	@coverage run -m unittest tests/test_app_single.py
 	@coverage report
 	@coverage html
