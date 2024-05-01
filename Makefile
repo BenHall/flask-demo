@@ -8,6 +8,13 @@ test:
 	@echo "Running tests..."
 	@python -m unittest discover -s tests
 
+coverage:
+	@coverage run -m unittest discover
+	@coverage report
+	@coverage html
+
+
+
 install:
 	@echo "Installing dependencies..."
 	@pip install -r requirements.txt
